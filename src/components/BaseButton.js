@@ -25,6 +25,7 @@ export default function BaseButton(props) {
       }}
     >
       {props.text}
+      {props.icon}
     </Button>
   );
 }

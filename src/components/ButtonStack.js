@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BaseButton from "./BaseButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
   stack: {
@@ -14,12 +16,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const details = {
-  buttonText1: "Get a Quote",
-  buttonText2: "Make a Claim ->",
+  buttonText1: "Get a Quote  ",
+  buttonText2: "Make a Claim  ",
   buttonColor1: "white",
   buttonColor2: "Red",
   buttonBgColor1: "Red",
   buttonBgColor2: "white",
+  icon: <FontAwesomeIcon icon={faArrowRight} size="sm" />,
 };
 export default function ButtonStack() {
   const classes = useStyles();
@@ -29,13 +32,14 @@ export default function ButtonStack() {
         text={details.buttonText1}
         textColor={details.buttonColor1}
         bgColor={details.buttonBgColor1}
-      >
-        <i className="far fa-arrow-alot-circle-right"></i>
-      </BaseButton>
+        icon={details.icon}
+      ></BaseButton>
+
       <BaseButton
         text={details.buttonText2}
         textColor={details.buttonColor2}
         bgColor={details.buttonBgColor2}
+        icon={details.icon}
       />
     </div>
   );
