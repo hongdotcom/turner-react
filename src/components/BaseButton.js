@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Mulish, sans-serif",
     fontSize: "1.8vw",
     fontWeight: "600",
-    width: "25%",
-    letterSpacing: 1.5,
+    width: "28%",
+    height: "10vh",
   },
 }));
 export default function BaseButton(props) {
@@ -24,7 +24,7 @@ export default function BaseButton(props) {
       }}
     >
       {props.text}
-      &nbsp;
+      &nbsp;&nbsp;&nbsp;
       {props.icon}
     </Button>
   );
