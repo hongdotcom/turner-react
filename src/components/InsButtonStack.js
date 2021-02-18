@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   space: {
-    width: "12vw",
+    width: "10vw",
     height: "auto",
     justifyItems: "right",
     justifyContent: "end",
@@ -30,6 +30,8 @@ const details = {
   buttonBgColor1: "Red",
   buttonBgColor2: "white",
   icon: <FontAwesomeIcon icon={faArrowRight} size="sm" />,
+  url1: "/claim",
+  url2: "/home",
 };
 export default function ButtonStack() {
   const classes = useStyles();
@@ -41,6 +43,7 @@ export default function ButtonStack() {
         bgColor={details.buttonBgColor1}
         icon={details.icon}
         space={details.buttonSpace}
+        link={details.url2}
       ></BaseButton>
 
       <div className={classes.space}></div>
@@ -50,6 +53,7 @@ export default function ButtonStack() {
         bgColor={details.buttonBgColor2}
         icon={details.icon}
         space={details.buttonSpace}
+        link={details.url1}
       />
     </div>
   );
