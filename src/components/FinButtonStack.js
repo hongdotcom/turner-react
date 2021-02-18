@@ -23,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const details = {
-  buttonText1: "Get a Quote",
-  buttonText2: "Make a Claim",
-  buttonColor1: "white",
-  buttonColor2: "#FB4646",
-  buttonBgColor1: "#FB4646",
-  buttonBgColor2: "white",
+  buttonText1: "Apply Personal",
+  buttonText2: "Apply Business",
+  buttonColor1: "#18A0FB",
+  buttonColor2: "white",
+  buttonBgColor1: "white",
+  buttonBgColor2: "#18A0FB",
   icon: <FontAwesomeIcon icon={faArrowRight} size="sm" />,
   url1: "/claim",
   url2: "/home",

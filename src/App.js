@@ -16,7 +16,6 @@ function App() {
     <Router>
       <CssBaseline />
       <Fonts />
-
       <Switch>
         <Route exact path="/home" component={HomeLanding} />
         <Route path="/insurance" component={InsLanding} />

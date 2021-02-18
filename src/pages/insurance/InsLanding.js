@@ -3,26 +3,35 @@ import Header from "../../components/Header";
 import Background from "../../components/Background";
 import Navbar from "../../components/Navbar";
 import bg from "../../static/images/ins_bg.jpg";
-import test_bg from "../../static/images/test_bg.png";
+// import secbg from "../../static/images/sec_bg.png";
 import InsButtonStack from "../../components/InsButtonStack";
-import InsSecHeader from "../../components/InsSecHeader";
-import InsSecBackground from "../../components/InsSecBackground";
+import SecSection from "../../components/SecSection";
+
 const details = {
   text: "Welcome to Turner Insurance",
   color: "white",
-  url: `url(${bg})`,
-  url2: `url(${test_bg})`,
   navColor: "white",
+  customStyle: {
+    position: "absolute",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    backgroundAttachment: "fixed",
+    backgroundImage: `url(${bg})`,
+    zIndex: -1,
+    opacity: 1,
+    minHeight: "100%",
+    minWidth: "100%",
+  },
 };
 function InsLanding() {
   return (
     <>
-      <Background url={details.url} />
+      <Background customStyle={details.customStyle} />
       <Navbar navColor={details.navColor} />
       <Header text={details.text} color={details.color} />
       <InsButtonStack />
-      <InsSecBackground url={details.url2} />
-      <InsSecHeader />
+      <SecSection />
     </>
   );
 }

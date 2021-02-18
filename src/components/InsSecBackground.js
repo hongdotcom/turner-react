@@ -3,21 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   bgImg: {
-    position: "absolute",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
-    backgroundAttachment: "fixed",
-    zIndex: -1,
+    backgroundColor: "#FFC5B8",
+    display: "inline-block",
+    zIndex: -2,
     opacity: 1,
-    minHeight: "100%",
-    minWidth: "100%",
+    Height: "2000px",
+    Width: "1000px",
+    borderRadius: "50%",
+    padding: "1000px",
   },
 }));
 
 export default function InsSceBackground(props) {
   const classes = useStyles();
-  return (
-    <div className={classes.bgImg} style={{ backgroundImage: props.url }}></div>
-  );
+  return <div className={classes.bgImg}></div>;
 }

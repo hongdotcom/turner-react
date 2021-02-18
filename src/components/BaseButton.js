@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     backgroundColor: "red",
     fontFamily: "Mulish, sans-serif",
-    fontSize: "1.8vw",
+    fontSize: "1.6vw",
     fontWeight: "600",
     textDecoration: "none",
     listStyleType: "none",
