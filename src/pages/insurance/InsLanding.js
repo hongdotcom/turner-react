@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Background from "../../components/Background";
 import Navbar from "../../components/Navbar";
 import bg from "../../static/images/ins_bg.jpg";
-import ButtonStack from "../../components/ButtonStack";
+import InsButtonStack from "../../components/InsButtonStack";
 
 const details = {
   text: "Welcome to Turner Insurance",
@@ -17,7 +17,7 @@ function InsLanding() {
       <Background url={details.url} />
       <Navbar navColor={details.navColor} />
       <Header text={details.text} color={details.color} />
-      <ButtonStack />
+      <InsButtonStack />
     </>
   );
 }
