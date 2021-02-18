@@ -6,6 +6,7 @@ import bg from "../../static/images/fin_bg.jpg";
 
 const details = {
   text: "Welcome to Turner Claim",
+
   color: "#03539D",
   url: `url(${bg})`,
   navColor: "#4D4949",

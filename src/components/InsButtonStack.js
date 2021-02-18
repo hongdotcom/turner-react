@@ -7,17 +7,24 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const useStyles = makeStyles((theme) => ({
   stack: {
     width: "100%",
-    marginTop: "55vh",
+    marginTop: "50vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: "100px",
     color: "white",
   },
+  space: {
+    width: "12vw",
+    height: "auto",
+    justifyItems: "right",
+    justifyContent: "end",
+    display: "flex",
+  },
 }));
 const details = {
-  buttonText1: "Get a Quote  ",
-  buttonText2: "Make a Claim  ",
+  buttonText1: "Get a Quote",
+  buttonText2: "Make a Claim",
   buttonColor1: "white",
   buttonColor2: "Red",
   buttonBgColor1: "Red",
@@ -33,13 +40,16 @@ export default function ButtonStack() {
         textColor={details.buttonColor1}
         bgColor={details.buttonBgColor1}
         icon={details.icon}
+        space={details.buttonSpace}
       ></BaseButton>
 
+      <div className={classes.space}></div>
       <BaseButton
         text={details.buttonText2}
         textColor={details.buttonColor2}
         bgColor={details.buttonBgColor2}
         icon={details.icon}
+        space={details.buttonSpace}
       />
     </div>
   );

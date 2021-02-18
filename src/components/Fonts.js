@@ -12,10 +12,6 @@ export default function fonts() {
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&display=swap"
         rel="stylesheet"
       />
-      {/* <script
-        src="https://kit.fontawesome.com/791866038c.js"
-        crossorigin="anonymous"
-      ></script> */}
     </div>
   );
 }
