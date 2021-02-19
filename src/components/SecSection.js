@@ -13,8 +13,7 @@ const details = {
     // backgroundColor: "white",
     // background: "rgb(168, 15, 73)",
     background:
-      "linear-gradient(90deg, rgba(168,15,73,1) 0%, rgba(208,26,95,1) 35%, rgba(255,255,255,1) 100%)",
-    spacing: 2,
+      "linear-gradient(90deg, rgba(208,26,95,1) 0%,rgba(168,15,73,1) 35%,  rgba(255,255,255,1) 100%)",
   },
   customStyle1: {
     // backgroundColor: "rgba(64,194,214,0.4)",
@@ -103,7 +102,7 @@ export default function SecSection() {
               <SecHeader
                 color="black"
                 opacity="1"
-                fontSize="1rem"
+                fontSize="0.6rem"
                 text="Third Party, Fire & Theft"
               />
             </RowLayout>

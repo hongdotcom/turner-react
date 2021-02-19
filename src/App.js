@@ -17,12 +17,25 @@ function App() {
       <CssBaseline />
       <Fonts />
       <Switch>
-        <Route exact path="/home" component={HomeLanding} />
-        <Route path="/insurance" component={InsLanding} />
-        <Route path="/finance" component={FinLanding} />
-        <Route path="/claim" component={ClaimLanding} />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/home`}
+          component={HomeLanding}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/insurance`}
+          component={InsLanding}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/finance`}
+          component={FinLanding}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/claim`}
+          component={ClaimLanding}
+        />
         {/* Redirect all 404 to Home */}
-        <Redirect to="/insurance" />
+        <Redirect to={`${process.env.PUBLIC_URL}/finance`} />
       </Switch>
     </Router>
   );

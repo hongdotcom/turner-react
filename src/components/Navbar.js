@@ -36,21 +36,21 @@ export default function Navbar(props) {
   const classes = useStyles();
   return (
     <AppBar className={classes.appbar} elevation={0}>
-      <Link to="/home">
+      <Link to={`${process.env.PUBLIC_URL}/home`}>
         <img className={classes.logo} src={logo} alt=""></img>
       </Link>
       <ul className={classes.list}>
         <Link
           className={classes.link}
           style={{ color: props.navColor }}
-          to="/finance"
+          to={`${process.env.PUBLIC_URL}/finance`}
         >
           <li>Finance</li>
         </Link>
         <Link
           className={classes.link}
           style={{ color: props.navColor }}
-          to="/insurance"
+          to={`${process.env.PUBLIC_URL}/insurance`}
         >
           <li>Insurance</li>
         </Link>

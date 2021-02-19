@@ -4,7 +4,7 @@ import Background from "../../components/Background";
 import Navbar from "../../components/Navbar";
 import bg from "../../static/images/ins_bg.jpg";
 // import secbg from "../../static/images/sec_bg.png";
-import InsButtonStack from "../../components/InsButtonStack";
+import InsButtonStack from "../../components/InsComponents/InsButtonStack";
 import SecSection from "../../components/SecSection";
 
 const details = {
