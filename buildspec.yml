@@ -4,12 +4,12 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
-      - npm install
+      - yarn install
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling
-      - npm run build
+      - yarn run build
   post_build:
     commands:
       - echo Build completed on `date`
@@ -21,3 +21,4 @@ artifacts:
     - package.json
     - appspec.yml
     - scripts/**/*
+    - build/**/*
